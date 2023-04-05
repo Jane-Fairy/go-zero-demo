@@ -2,6 +2,18 @@ syntax = "proto3";
 
 package user;
 
-service user {
+option go_package = "./user";
 
+message UserRequest {
+  string id = 1;
+  string name = 2;
+}
+
+message UserResponse {
+  string id = 1;
+  string name = 2;
+}
+
+service user {
+    rpc saveUser(UserRequest) returns(UserResponse);
 }

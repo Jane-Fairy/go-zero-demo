@@ -2,5 +2,4 @@ module book
 
 go 1.15
 
-require google.golang.org/grpc v1.35.0
-
+require github.com/zeromicro/go-zero v1.5.0
